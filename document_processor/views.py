@@ -43,7 +43,7 @@ def upload_file(request):
 
 
             llm = Llama(
-                model_path="Vikhr-Llama-3.2-1B-F16.gguf",
+                model_path="Vikhr-Llama-3.2-1B-Q8_0.gguf",
                 chat_format="llama-3",
                 n_ctx=4096,
                 n_threads=8,
