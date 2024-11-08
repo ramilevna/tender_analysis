@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
+    volumes:
+      - .:/app
